@@ -1,12 +1,12 @@
-# revision 32514
+# revision 34033
 # category Package
 # catalog-ctan /graphics/pstricks/contrib/pst-ovl
-# catalog-date 2013-12-28 16:20:03 +0100
+# catalog-date 2014-05-13 21:58:12 +0200
 # catalog-license lppl
-# catalog-version 0.04
+# catalog-version 0.06
 Name:		texlive-pst-ovl
-Version:	0.04
-Release:	2
+Version:	0.06
+Release:	1
 Summary:	Create and manage graphical overlays
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/graphics/pstricks/contrib/pst-ovl
