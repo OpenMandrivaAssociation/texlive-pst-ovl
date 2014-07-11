@@ -6,7 +6,7 @@
 # catalog-version 0.06
 Name:		texlive-pst-ovl
 Version:	0.06
-Release:	1
+Release:	2
 Summary:	Create and manage graphical overlays
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/graphics/pstricks/contrib/pst-ovl
