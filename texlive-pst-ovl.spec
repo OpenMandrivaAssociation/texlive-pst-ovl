@@ -1,18 +1,12 @@
-# revision 34033
-# category Package
-# catalog-ctan /graphics/pstricks/contrib/pst-ovl
-# catalog-date 2014-05-13 21:58:12 +0200
-# catalog-license lppl
-# catalog-version 0.06
 Name:		texlive-pst-ovl
-Version:	0.07a
-Release:	2
+Version:	54963
+Release:	1
 Summary:	Create and manage graphical overlays
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/graphics/pstricks/contrib/pst-ovl
 License:	LPPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/pst-ovl.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/pst-ovl.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/pst-ovl.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/pst-ovl.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -25,12 +19,12 @@ package requires pstricks, and shares that package's
 restrictions on usage when generating PDF output.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -45,7 +39,7 @@ restrictions on usage when generating PDF output.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
